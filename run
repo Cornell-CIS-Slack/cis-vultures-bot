@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd /home/jed/src/cis-vultures-bot/
+
+if [[ "$1" == "--no-fork" ]] ; then
+  ./cisVulturesBot.py &>>/tmp/cis-vultures-bot.log
+else
+  ./cisVulturesBot.py &>>/tmp/cis-vultures-bot.log &
+  disown %1
+fi

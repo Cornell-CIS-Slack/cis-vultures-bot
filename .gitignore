@@ -1,0 +1,6 @@
+.*.sw?
+__pycache__
+
+/client_secret.json
+/gmail-credentials.json
+/secrets.py

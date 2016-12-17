@@ -1,0 +1,9 @@
+[Unit]
+Description=CIS-Vultures Slack Bot 
+
+[Service]
+Type=simple
+ExecStart=/home/jed/src/cis-vultures-bot/run --no-fork
+
+[Install]
+WantedBy=default.target
